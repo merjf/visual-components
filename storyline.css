@@ -1,0 +1,131 @@
+.storyline-container {
+  display: grid;
+  grid-template-columns: repeat(1, 100%);
+}
+.storyline-item {
+  display: flex;
+  width: 50%;
+  min-width: 50%;
+  gap: 10px;
+  position: relative;
+  min-height: 150px;
+}
+.storyline-item-left {
+  text-align: right;
+  left: 0px;
+  align-self: flex-start;
+  margin-left: 15px;
+}
+.storyline-item-right {
+  text-align: left;
+  flex-direction: row-reverse;
+  right: 0px;
+  align-self: flex-end;
+  margin-left: calc(50% - 25px);
+}
+.storyline-text-section {
+  margin-top: 5px;
+}
+.storyline-graphic-section {
+  display: flex;
+  position: relative;
+}
+.storyline-graphic-top-section {
+  display: flex;
+}
+.storyline-item-right .storyline-graphic-section,
+.storyline-item-right .storyline-graphic-top-section {
+  flex-direction: row-reverse;
+}
+.storyline-item-right .storyline-graphic-section .storyline-line {
+  background-image: linear-gradient(to right, #dbdee2, white);
+}
+.storyline-item-right .storyline-pointed-line {
+  left: 0px;
+  right: unset;
+}
+.storyline-line {
+  background-image: linear-gradient(to right, white, #dbdee2);
+  border: none;
+  width: 130px;
+  height: 5px;
+  margin-top: 20px;
+}
+.storyline-bulletpoint {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(166, 173, 181, 0.18);
+  box-shadow: 5px 5px 15px 5px rgba(166, 173, 181, 0.18);
+}
+.storyline-bulletpoint-center {
+  background-color: #767c84;
+  width: 20px;
+  height: 20px;
+  margin: auto;
+  border-radius: 20px;
+}
+.storyline-pointed-line {
+  background-image: linear-gradient(#a6adb5 44%, white 0%);
+  background-position: center;
+  background-size: 4px 20px;
+  background-repeat: repeat-y;
+  height: 100%;
+  position: absolute;
+  right: 0px;
+  width: 40px;
+  border: none;
+  margin: 0px;
+}
+.storyline-item:first-child .storyline-graphic-section > div:last-child {
+  background-image: linear-gradient(white 20%, rgba(0, 0, 0, 0) 80%);
+  height: 100%;
+  width: 20px;
+  position: absolute;
+  right: 10px;
+}
+.storyline-item:last-child.storyline-item-left
+  .storyline-graphic-section
+  > div:last-child {
+  background-image: linear-gradient(rgba(0, 0, 0, 0) 20%, white 100%);
+  height: 100%;
+  width: 20px;
+  position: absolute;
+  right: 10px;
+}
+.storyline-item:last-child.storyline-item-right
+  .storyline-graphic-section
+  > div:last-child {
+  background-image: linear-gradient(rgba(0, 0, 0, 0) 20%, white 100%);
+  height: 100%;
+  width: 20px;
+  position: absolute;
+  left: 10px;
+}
+.storyline-date,
+.storyline-title,
+.storyline-description {
+  margin: 0px;
+  padding: 0px;
+}
+.storyline-date,
+.storyline-title {
+  color: #03234b;
+}
+.storyline-date {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+.storyline-title {
+  font-size: 21px;
+  margin-bottom: 10px;
+}
+.storyline-description {
+  font-size: 18px;
+  color: #767c84;
+}

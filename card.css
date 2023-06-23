@@ -1,0 +1,49 @@
+.simple-colored-card {
+  width: 310px;
+  height: 280px;
+  background-color: #ffd200;
+  padding: 20px 40px;
+  margin: auto;
+}
+.simple-colored-card-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 5px;
+  height: 100%;
+}
+.simple-colored-card-text {
+  text-align: left;
+  color: #03234b;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.simple-colored-card-text h3 {
+  font-size: 24px;
+  padding: 0px;
+  margin: 0px;
+}
+.simple-colored-card-text p {
+  font-size: 17px;
+  margin: 0px;
+  padding: 0px;
+  line-height: 1.55;
+}
+.simple-colored-card-button {
+  font-size: 15px;
+  padding: 7px 25px;
+  border-radius: 12px 0;
+  background: #03234b;
+  color: white !important;
+  text-decoration: none;
+  display: flex;
+  gap: 10px;
+}
+.simple-colored-card-button img {
+  width: 20px;
+  height: 20px;
+  margin: auto;
+}
