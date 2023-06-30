@@ -25,6 +25,7 @@
 }
 .storyline-text-section {
   margin-top: 5px;
+  width: 100%;
 }
 .storyline-graphic-section {
   display: flex;
@@ -128,4 +129,55 @@
 .storyline-description {
   font-size: 18px;
   color: #767c84;
+}
+@media (max-width: 640px) {
+  .storyline-item-left,
+  .storyline-item-right,
+  .storyline-text-section {
+    width: 100%;
+  }
+  .storyline-item-left {
+    text-align: left;
+    flex-direction: row-reverse;
+    right: 0px;
+    align-self: flex-end;
+    margin-left: 0px;
+  }
+  .storyline-item-left .storyline-graphic-section,
+  .storyline-item-left .storyline-graphic-top-section {
+    flex-direction: row-reverse;
+  }
+  .storyline-item-left .storyline-graphic-section .storyline-line {
+    background-image: linear-gradient(to right, #dbdee2, white);
+  }
+  .storyline-item-left .storyline-pointed-line {
+    left: 0px;
+    right: unset;
+  }
+  .storyline-item:last-child.storyline-item-left
+    .storyline-graphic-section
+    > div:last-child {
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 20%, white 100%);
+    height: calc(100% + 40px);
+    width: 20px;
+    position: absolute;
+    left: 10px;
+  }
+  .storyline-item-right {
+    margin-left: 0px;
+  }
+  .storyline-line {
+    width: 70px;
+  }
+  .storyline-date {
+    font-size: 27px;
+  }
+  .storyline-title,
+  .storyline-description {
+    font-size: 15px;
+  }
+  .storyline-pointed-line,
+  .storyline-pointed-line div {
+    height: calc(100% + 40px);
+  }
 }

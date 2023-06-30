@@ -1,0 +1,88 @@
+.card-tab-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.card-tab-tab-list {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+.card-tab-tab-item {
+  color: #767c84;
+  font-size: 36px;
+  cursor: pointer;
+}
+.card-tab-tab-item h3 {
+  padding: 0px;
+  margin: 0px;
+}
+.card-tab-tab-item.active {
+  color: #03234b;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+}
+.card-tab-card-container {
+  width: 100%;
+}
+.card-tab-cards {
+  flex-direction: row;
+  gap: 20px;
+  display: none;
+  overflow-x: auto;
+  min-height: 300px;
+}
+.card-tab-cards::-webkit-scrollbar-track {
+  border: none;
+  padding: 0px;
+  background-color: transparent;
+}
+.card-tab-cards::-webkit-scrollbar-thumb {
+  border-radius: none;
+  box-shadow: none;
+  background-color: transparent;
+  border: none;
+}
+.card-tab-cards::-webkit-scrollbar {
+  width: 0px !important;
+}
+.card-tab-cards.active {
+  display: flex;
+}
+.card-tab-card-box {
+  background-color: #03234b;
+  min-width: 285px;
+  min-height: 285px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+.card-tab-card-box h4 {
+  margin: 0px;
+  padding: 0px;
+  font-size: 56px;
+}
+.card-tab-card-box span {
+  font-size: 20px;
+  margin-bottom: 20px;
+  margin-top: -15px;
+}
+.card-tab-card-number {
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 25px;
+  position: absolute;
+  top: 0px;
+  left: 10px;
+}
+.card-tab-card-box p {
+  font-size: 15px;
+  display: none;
+}
+.card-tab-card-box:hover p {
+  display: block;
+}
