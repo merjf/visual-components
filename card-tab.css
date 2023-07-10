@@ -94,7 +94,7 @@
     gap: 20px;
   }
   .card-tab-tab-item {
-    font-size: 17px;
+    font-size: 36px;
   }
   .card-tab-card-number {
     font-size: 25px;
@@ -104,9 +104,11 @@
     min-height: 250px;
     max-width: 210px;
     max-height: 250px;
+    justify-content: flex-start;
   }
   .card-tab-card-box h4 {
     font-size: 44px;
+    margin-bottom: 5px;
   }
   .card-tab-card-box span {
     font-size: 19px;
@@ -118,6 +120,9 @@
   }
 }
 @media (max-width: 640px) {
+  .card-tab-cards {
+    min-height: 190px;
+  }
   .card-tab-tab-list {
     gap: 20px;
   }
@@ -135,9 +140,11 @@
     max-width: 200px;
     max-height: 160px;
     padding: 5px;
+    justify-content: flex-start;
   }
   .card-tab-card-box h4 {
     font-size: 27px;
+    margin-bottom: 5px;
   }
   .card-tab-card-box span,
   .card-tab-card-box p {

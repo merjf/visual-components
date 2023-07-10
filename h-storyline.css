@@ -110,7 +110,7 @@
 }
 .storyline-date,
 .storyline-title {
-  color: #03234b;
+  color: #525a63;
 }
 .storyline-date {
   font-size: 24px;
@@ -133,5 +133,14 @@
   }
   .storyline-pointed-line-starter {
     display: none;
+  }
+}
+@media (max-width: 640px) {
+  .storyline-date {
+    font-size: 21px;
+  }
+  .storyline-description,
+  .storyline-title {
+    font-size: 15px;
   }
 }

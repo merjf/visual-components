@@ -10,6 +10,12 @@ $(document).ready(function () {
       cards.map((link) => link.classList.remove('active'));
       cards[index].classList.add('active');
       e.target.classList.add('active');
+      const btn = document.getElementById('request-latest-mrt-btn');
+      if (btn.textContent === 'Request latest CMRT') {
+        btn.textContent = 'Request latest EMRT';
+      } else {
+        btn.textContent = 'Request latest CMRT';
+      }
     });
   });
 });

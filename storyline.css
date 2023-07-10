@@ -27,6 +27,14 @@
   margin-top: 5px;
   width: 100%;
 }
+.storyline-text-section hr {
+  margin-left: 0px;
+  width: 20px;
+}
+.storyline-item-left .storyline-text-section hr {
+  margin-right: 0px;
+  margin-left: auto;
+}
 .storyline-graphic-section {
   display: flex;
   position: relative;
