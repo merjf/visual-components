@@ -1,0 +1,147 @@
+.grid-fade-container {
+}
+.grid-fade-container * {
+  margin: 0px;
+  padding: 0px;
+}
+.grid-fade-item {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.grid-fade-left-item {
+  background-color: #f7f8fa;
+  position: relative;
+}
+.grid-fade-item:first-child .grid-fade-left-item {
+  background-image: linear-gradient(to top, #f7f8fa, white);
+  padding-top: 50px;
+}
+.grid-fade-item:first-child .grid-fade-right-item {
+  padding-top: 50px;
+}
+.grid-fade-item:last-child .grid-fade-left-item {
+  background-image: linear-gradient(to bottom, #f7f8fa, white);
+  padding-bottom: 50px;
+}
+.grid-fade-item:last-child .grid-fade-right-item {
+  padding-bottom: 50px;
+}
+.grid-fade-left-item,
+.grid-fade-right-item {
+  text-align: left;
+  min-height: 580px;
+}
+.grid-fade-left-item h2 {
+  font-size: 36px;
+  color: #03234b;
+  margin-left: 35px;
+  max-width: 45%;
+  margin: auto;
+}
+.grid-fade-right-item p {
+  font-size: 21px;
+  color: #525a63;
+  margin-left: 35px;
+  max-width: 60%;
+  line-height: 1.85;
+}
+.grid-fade-right-item hr {
+  border: 1px solid #dbdee2;
+  margin: 30px 0px 30px 35px;
+  width: 60%;
+}
+.grid-fade-graphic-section {
+  display: flex;
+  position: absolute;
+  top: 8px;
+  right: -17px;
+}
+.grid-fade-item:first-child .grid-fade-graphic-section {
+  top: 57px;
+}
+.grid-fade-line {
+  background-image: linear-gradient(to right, transparent, #dbdee2);
+  border: none;
+  width: 170px;
+  height: 5px;
+  margin: auto;
+  position: absolute;
+  top: 15px;
+  right: 0px;
+}
+.grid-fade-bulletpoint {
+  width: 32px;
+  height: 32px;
+  background-color: white;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(166, 173, 181, 0.18);
+  box-shadow: 5px 5px 15px 5px rgba(166, 173, 181, 0.18);
+}
+.grid-fade-bulletpoint-center {
+  background-color: #767c84;
+  width: 18px;
+  height: 18px;
+  margin: auto;
+  border-radius: 20px;
+}
+.grid-fade-pointed-line {
+  background-image: linear-gradient(#a6adb5 44%, white 0%);
+  background-position: center;
+  background-size: 2px 15px;
+  background-repeat: repeat-y;
+  height: 100%;
+  position: absolute;
+  right: -21px;
+  width: 40px;
+  top: 0px;
+}
+.grid-fade-item:first-child .grid-fade-pointed-line div,
+.grid-fade-item:last-child .grid-fade-pointed-line div {
+  background-image: linear-gradient(white 20%, rgba(0, 0, 0, 0) 80%);
+  height: 100%;
+  width: 11px;
+  position: absolute;
+  right: 10px;
+}
+.grid-fade-item:last-child .grid-fade-pointed-line div {
+  background-image: linear-gradient(to top, white 20%, rgba(0, 0, 0, 0) 80%);
+}
+@media (min-width: 641px) and (max-width: 1024px) {
+  .grid-fade-right-item p {
+    font-size: 17px;
+    max-width: 90%;
+  }
+  .grid-fade-left-item h2 {
+    margin-left: 20px;
+  }
+}
+@media (max-width: 640px) {
+  .grid-fade-item {
+    grid-template-columns: 100%;
+  }
+  .grid-fade-item:first-child .grid-fade-right-item {
+    padding-top: 0px;
+  }
+  .grid-fade-left-item,
+  .grid-fade-right-item {
+    min-height: unset;
+    margin-left: 50px;
+    background-image: none;
+    background-color: white;
+  }
+  .grid-fade-left-item h2 {
+    font-size: 27px;
+    margin-left: 0px;
+  }
+  .grid-fade-right-item p {
+    font-size: 15px;
+    margin-left: 0px;
+  }
+  .d-sm-none {
+    display: none;
+  }
+}

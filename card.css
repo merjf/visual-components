@@ -60,6 +60,7 @@
   }
   .simple-colored-card-box {
     flex-direction: row;
+    justify-content: space-between;
   }
   .simple-colored-card-text {
     max-width: 45%;

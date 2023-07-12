@@ -378,4 +378,7 @@
   .arrow-mobile {
     display: block;
   }
+  .block-storyline-single-block p {
+    font-size: 15px;
+  }
 }
